@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Get an OpenAI API Key</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 5rem 0;
+            margin-bottom: 2rem;
+        }
+        .step-card {
+            border-left: 4px solid #6c757d;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+        }
+        .step-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6c757d;
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .warning-text {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">OpenAI API Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4">How to Get an OpenAI API Key</h1>
+            <p class="lead">A step-by-step guide to obtaining and managing your OpenAI API key</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <article>
+                    <h2 class="mb-4">Introduction</h2>
+                    <p>OpenAI provides powerful AI models through their API, allowing developers to integrate cutting-edge AI capabilities into their applications. Whether you're looking to use ChatGPT, DALL-E, or other models, you'll need an API key to get started. This guide walks you through the process of obtaining an OpenAI API key from scratch.</p>
+
+                    <div class="alert alert-info mt-4">
+                        <strong>Note:</strong> OpenAI's API is a paid service. While they offer a free tier with usage limits, you'll need to provide payment information to get full access.
+                    </div>
+
+                    <h2 class="mt-5 mb-4">Step-by-Step Guide</h2>
+
+                    <!-- Step 1 -->
+                    <div class="card step-card">
+                        <div class="card-body">
+                            <div class="step-number">Step 1</div>
+                            <h3>Create an OpenAI Account</h3>
+                            <p>Visit <a href="https://openai.com" target="_blank">OpenAI's website</a> and click on the "Sign Up" button in the top-right corner. You can sign up using your email address or continue with Google or Microsoft account.</p>
+                            <ul>
+                                <li>Enter your email address and create a strong password</li>
+                                <li>Verify your email address by clicking the link sent to your inbox</li>
+                                <li>Complete the verification process (may include phone verification)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="card step-card">
+                        <div class="card-body">
+                            <div class="step-number">Step 2</div>
+                            <h3>Access the API Section</h3>
+                            <p>Once logged in, navigate to the API section:</p>
+                            <ul>
+                                <li>Click on your profile icon in the top-right corner</li>
+                                <li>Select "View API keys" from the dropdown menu</li>
+                                <li>Alternatively, go directly to <a href="https://platform.openai.com/api-keys" target="_blank">platform.openai.com/api-keys</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="card step-card">
+                        <div class="card-body">
+                            <div class="step-number">Step 3</div>
+                            <h3>Set Up Billing Information</h3>
+                            <p>If you haven't already added payment information, you'll be prompted to do so now:</p>
+                            <ul>
+                                <li>Click on "Billing" in the left sidebar</li>
+                                <li>Click "Set up paid account"</li>
+                                <li>Enter your payment details (credit card information)</li>
+                                <li>Complete the payment setup process</li>
+                            </ul>
+                            <div class="alert alert-warning">
+                                <strong>Important:</strong> OpenAI charges based on usage. Set up usage limits in your account settings to avoid unexpected charges.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="card step-card">
+                        <div class="card-body">
+                            <div class="step-number">Step 4</div>
+                            <h3>Generate Your API Key</h3>
+                            <p>Now you're ready to create your API key:</p>
+                            <ul>
+                                <li>Navigate back to the API keys section</li>
+                                <li>Click the "Create new secret key" button</li>
+                                <li>Optionally, add a descriptive name for your key</li>
+                                <li>Click "Create secret key"</li>
+                            </ul>
+                            <div class="alert alert-danger">
+                                <strong>Warning:</strong> Your API key will only be shown once. Make sure to copy it immediately and store it securely. If you lose it, you'll need to generate a new one.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="card step-card">
+                        <div class="card-body">
+                            <div class="step-number">Step 5</div>
+                            <h3>Store Your API Key Securely</h3>
+                            <p>API keys should never be hardcoded in your applications or shared publicly:</p>
+                            <ul>
+                                <li>Use environment variables to store your API key</li>
+                                <li>Consider using a password manager for personal storage</li>
+                                <li>For production applications, use a secrets management service</li>
+                            </ul>
+                            <div class="code-block">
+                                <code>
+                                    # Example of using an environment variable in Python<br>
+                                    import os<br>
+                                    import openai<br><br>
+                                    openai.api_key = os.environ.get("OPENAI_API_KEY")
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="card step-card">
+                        <div class="card-body">
+                            <div class="step-number">Step 6</div>
+                            <h3>Monitor Your Usage</h3>
+                            <p>Keep track of your API usage to manage costs:</p>
+                            <ul>
+                                <li>Set up usage limits in the "Billing" section</li>
+                                <li>Regularly check your usage dashboard</li>
+                                <li>Configure email notifications for usage alerts</li>
+                            </ul>
+                            <p>This is especially important if you're integrating OpenAI into a production application where usage might scale quickly.</p>
+                        </div>
+                    </div>
+
+                    <h2 class="mt-5 mb-4">Using Your API Key</h2>
+                    <p>Once you have your API key, you can start making requests to OpenAI's API. Here's a simple example using Python:</p>
+                    <div class="code-block">
+                        <code>
+                            import openai<br><br>
+                            # Set your API key<br>
+                            openai.api_key = "your-api-key-here"<br><br>
+                            # Make a request to the ChatGPT API<br>
+                            response = openai.ChatCompletion.create(<br>
+                            &nbsp;&nbsp;model="gpt-4",<br>
+                            &nbsp;&nbsp;messages=[<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;{"role": "system", "content": "You are a helpful assistant."},<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;{"role": "user", "content": "Hello, world!"}<br>
+                            &nbsp;&nbsp;]<br>
+                            )<br><br>
+                            # Print the response<br>
+                            print(response.choices[0].message.content)
+                        </code>
+                    </div>
+
+                    <h2 class="mt-5 mb-4">Best Practices</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3>Security</h3>
+                            <ul>
+                                <li>Never expose your API key in client-side code</li>
+                                <li>Rotate your API keys periodically</li>
+                                <li>Use different API keys for development and production</li>
+                                <li>Set appropriate permissions for each API key</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3>Cost Management</h3>
+                            <ul>
+                                <li>Set hard usage limits to prevent unexpected charges</li>
+                                <li>Use the most efficient model for your needs</li>
+                                <li>Implement caching for common requests</li>
+                                <li>Monitor your usage regularly</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2 class="mt-5 mb-4">Conclusion</h2>
+                    <p>Obtaining an OpenAI API key is a straightforward process, but managing it securely and efficiently requires attention to best practices. With your API key in hand, you can now harness the power of OpenAI's models for your applications.</p>
+                    <p>Remember that the API landscape may change over time, so it's always a good idea to stay updated with OpenAI's documentation for the latest information on API access and usage.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>OpenAI API Guide</h5>
+                    <p>A comprehensive resource for working with OpenAI's powerful APIs.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Tutorials</a></li>
+                        <li><a href="#" class="text-white">Documentation</a></li>
+                        <li><a href="#" class="text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://openai.com" class="text-white">OpenAI</a></li>
+                        <li><a href="https://platform.openai.com/docs" class="text-white">API Documentation</a></li>
+                        <li><a href="https://community.openai.com" class="text-white">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 OpenAI API Guide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
